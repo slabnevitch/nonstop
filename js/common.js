@@ -22,12 +22,12 @@ $(function() {
 				$('.header-menu').removeClass('black-line-delay');
 			}, 2500);
 		}
-		$('.gallery-item__play-link').click(function() {
-				$.showYtVideo({
-                    videoId: '2nH5gGbiH6U'
-                });
-                return false;
-			});
+		// $('.gallery-item__play-link').click(function() {
+		// 		$.showYtVideo({
+  //                   videoId: '2nH5gGbiH6U'
+  //               });
+  //               return false;
+		// 	});
 	});
 
 		// scroll Sections
