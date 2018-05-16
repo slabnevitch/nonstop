@@ -1401,8 +1401,9 @@ header {
       width: 100% !important;
       height: 100% !important; }
   .modal-close {
-    top: -20px;
-    right: 10px; }
+    top: 5px;
+    right: 10px;
+    z-index: 100; }
   /*Disable Animation on Mobile Devices*/ }
 
 /* Extra Small Devices, Phones */
