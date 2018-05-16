@@ -370,13 +370,27 @@ h2 {
   padding-top: 30px; }
   .sect-header--about {
     position: relative; }
-    .sect-header--about .sect-header__title p {
+    .sect-header--about p {
       position: absolute;
       font-size: 25px;
       letter-spacing: 0;
       line-height: 25px;
-      top: -44px;
-      left: 230px; }
+      top: -16px;
+      right: 290px;
+      font-family: "Pragmatica", sans-serif;
+      -webkit-transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition: 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.6s cubic-bezier(0.215, 0.61, 0.355, 1);
+      opacity: 0;
+      -webkit-transform: translateY(30px);
+          -ms-transform: translateY(30px);
+              transform: translateY(30px); }
+      .sect-header--about p.active {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        opacity: 1; }
 
 .sect-header__title {
   position: relative;
@@ -1401,8 +1415,8 @@ header {
     line-height: 89px; }
   .sect-header {
     margin-left: 294px; }
-    .sect-header--about .sect-header__title p {
-      left: 129px; }
+  .sect-header--about p {
+    right: 88px; }
   .footer-right {
     width: 100%; }
   .footer-menu li {
@@ -1420,7 +1434,7 @@ header {
   .sect-selection {
     padding: 0;
     margin-bottom: 30px; }
-  section {
+  .section {
     margin-bottom: 70px; } }
 
 /* Small Devices, Tablets */
@@ -1451,15 +1465,15 @@ header {
   .sect-header__title {
     letter-spacing: 0;
     line-height: 63px; }
-  .sect-header--about .sect-header__title p {
+  .sect-header--about p {
     font-size: 21px;
-    top: -32px;
-    left: 100px; }
+    top: -11px;
+    right: 59px; }
   .sect-half-div {
     width: 100%; }
   .sect-header__line {
     height: 10px; }
-  section {
+  .section {
     margin-bottom: 50px; }
   .footer-left {
     display: none; }
@@ -1523,10 +1537,9 @@ header {
   .sect-header__title {
     font-size: 50px;
     line-height: 33px; }
-  .sect-header--about .sect-header__title p {
-    top: -36px;
-    left: auto;
-    right: 0;
+  .sect-header--about p {
+    top: -7px;
+    right: 13px;
     font-size: 15px; }
   .header-float {
     font-size: 52px;

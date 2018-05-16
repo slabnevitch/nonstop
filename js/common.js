@@ -28,6 +28,7 @@ $(function() {
   //               });
   //               return false;
 		// 	});
+		menuClick.init();
 	});
 
 		// scroll Sections
@@ -136,11 +137,12 @@ $(function() {
 	}
 
 	var menuClick = new Menu();
-	menuClick.init();
+	
 
 	// scroll to
 		$('.header-scroll').click(function() {
 			// $.scrollify.move('#news');
+			console.log($('#news').length);
 				var sectionCoord = $('#news').offset().top;
 				$('html, body').animate({scrollTop: sectionCoord}, 1000);
 		});
@@ -199,7 +201,7 @@ $(function() {
 		offset: "120%"
 	  
 	});
-	var itemsWaypoints = $('.news-item, .about-item').waypoint({
+	var itemsWaypoints = $('.news-item, .about-item, .sect-header--about p').waypoint({
 	  handler: function(direction) {
 	  	$(this.element).addClass('active');
 		},
