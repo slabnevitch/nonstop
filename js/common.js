@@ -140,7 +140,7 @@ $(function() {
 
 	// scroll to
 		$('.header-scroll').click(function() {
-			$.scrollify.move('#news');
+			// $.scrollify.move('#news');
 				var sectionCoord = $('#news').offset().top;
 				$('html, body').animate({scrollTop: sectionCoord}, 1000);
 		});
